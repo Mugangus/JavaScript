@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Clock Widget</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Widget Horloge Mondiale</h1>
+
+        <div class="text-center">
+            <div id="clock" class="clock-display"></div>
+            <div id="date" class="date-display"></div>
+            <div id="timezone-display" class="timezone-display"></div>
+        </div>
+
+        <div class="w-full">
+            <label for="timezone-select">choose the time-zone</label>
+            <select id="timezone-select">
+            </select>
+        </div>
+
+        <div class="w-full flex-center">
+            <button id="mode-toggle" class="btn-primary">
+                Dark mode
+            </button>
+        </div>
+
+        <div class="w-full flex-col-center">
+            <label class="mb-3">choose a theme :</label>
+            <div class="flex-space-x-4">
+                <button class="theme-btn default" data-theme="default" title="Thème par défaut"></button>
+                <button class="theme-btn ocean-breeze" data-theme="ocean-breeze" title="Thème Brise Océane"></button>
+                <button class="theme-btn sunset-glow" data-theme="sunset-glow" title="Thème Coucher de Soleil"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="dynamic.js"></script>
+</body>
+</html>
